@@ -1,0 +1,114 @@
+**HTML 2. 달력만들기 설명
+
+HTML 태그를 이용하여 달력을 만들기 전, 표 콘텐츠를 작성하기 위한 <table> 태그를 학습해봅시다!
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
+
+위에 예제에서,
+<table> 태그는 행과 열로 이루어진 표를 정의합니다. 
+<th> 태그는 테이블의 셀 그룹의 헤더로 셀을 정의하며 '머리글 칸'을 지정합니다.
+<tr> 태그는 테이블의 행을 정의하며 '일반 칸'을 지정합니다.
+<td> 태그는 데이터를 포함하는 표의 셀을 정의합니다.
+
+*colspan과 rowspan속성을 사용하여 열과 행을 확장할 수 있습니다.
+
+<thead>,<tbody>,<tfoot> 태그는 표의 머리글, 본문, 바닥글을 지정하며, 기본적으로 테이블의 레이아웃에 영향을 주지 않습니다.
+
+학습한 내용을 통해 직접 코드를 작성해 보며 달력을 만들기 위한 HTML 뼈대를 세워봅시다!
+
+**CSS 2. 달력만들기 설명
+
+HTML로 작성한 달력을 꾸며보기 위한 여러가지 CSS 속성을 학습해봅시다!
+
+모든 HTML 요소는 박스(box) 모양으로 구성되며, 이것을 박스 모델(box model)이라고 부릅니다. 이 박스 모델을 구성하는 다양한 속성들 중 일부를 학습해보겠습니다.
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid red;
+    padding: 15px;
+}
+
+width 속성은 HTML 요소의 너비를 설정합니다.
+height 속성은 HTML 요소의 높이를 설정합니다.
+margin 속성은 테두리(border)와 이웃하는 요소 사이의 간격인 마진 영역의 크기를 설정합니다.
+border 속성은 내용(content)과 패딩(padding) 영역을 둘러싸는 테두리의 스타일을 설정합니다.
+padding 속성은 내용(content)과 테두리(border) 사이의 간격인 패딩 영역의 크기를 설정합니다.
+
+다음으로 웹 페이지를 보는 사용자가 마우스로 특정한 행동을 취했을 때 CSS 속성을 지정 할 수 있는 반응 선택자를 학습해봅시다!
+
+:hover선택자는 사용자가 마우스를 올린 태그를 선택합니다. 
+:active선택자는 사용자가 마우스로 클릭한 태그를 선택합니다.
+
+/* h1태그에 마우스를 올릴 경우에 color 속성에 red키워드를 적용합니다 */
+h1:hover {color: red;}
+
+/* h1태그를 마우스로 클릭할 대 color 속성에 blue키워드를 적용합니다 */
+h1:active {color:blue;}
+
+마지막으로 요소의 배경 효과를 정의하는데 사용하는 배경 속성을 학습해봅시다!
+
+background-color속성은 해당 HTML 요소의 배경색을 설정합니다.
+background-image속성은 해당 HTML 요소의 배경으로 나타날 배경 이미지를 설정합니다.
+background-size속성은 배경 이미지의 크기를 설정합니다.
+
+학습한 내용을 통해 HTML로 작성한 달력을 CSS로 꾸며봅시다!
+
+**JS 2. 달력만들기 설명
+
+javascript의 조건문과 반복문을 학습해봅시다!
+
+조건문은 특정 조건 만족 시 어떤 작업을 수행하고 싶을 때 사용합니다. 
+대표적으로 if, else if, else문이 있습니다. 
+
+if ( condition1 ) {
+  statement1
+} else if ( condition2 ) {
+  statement2
+} else {
+  statement3
+}
+condition1을 만족하면 statement1을 실행하고, condition2을 만족하면 statement2을 실행하고, 둘 다 만족하지 않으면 statement3을 실행합니다.
+
+반복문은 특정 작업을 반복적으로 할 때 사용할 수 있는 구문입니다.
+for 문은 가장 기본적인 반복문입니다. 특정 값에 변화를 주어가면서 우리가 정한 조건이 만족된다면 계속 반복합니다.
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+위 코드는 0부터 9까지의 숫자를 Web Console에 출력합니다.
+
+while문은 특정 조건이 참이라면 계속해서 반복하는 반복문입니다.
+
+우리가 앞서 작성했던 0 부터 9 까지 콘솔에 출력을하는 반복문을 while 문으로 구현해보겠습니다.
+
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+
+학습한 내용을 통해 HTML과 CSS로 작성한 달력에 자바스크립트 코드를 추가해봅시다!
+ 
+
+
+
+
+
+
+
