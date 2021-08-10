@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS를 배워봅시다.</title>
+    <script>
+        function getDiv1() {
+            const div1 = document.getElementById('div_1');
+            alert(div1.innerText);
+            console.log(div1.innerText);
+        }
+    </script>
+</head>
+
+<body>
+    <div id='div_1'>
+        Div1입니다.
+    </div>
+    <div id='div_2'>
+        Div2입니다.
+    </div>
+    <button onclick='getDiv1()'>id로 찾기</button>
+</body>
+
+</html>
